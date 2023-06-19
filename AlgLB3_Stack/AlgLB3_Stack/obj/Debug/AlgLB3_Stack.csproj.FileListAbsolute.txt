@@ -1,0 +1,15 @@
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.csprojAssemblyReference.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.csproj.CoreCompileInputs.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\bin\Debug\AlgLB3_Stack.exe.config
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\bin\Debug\AlgLB3_Stack.exe
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\bin\Debug\AlgLB3_Stack.pdb
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.exe
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.pdb
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\bin\Debug\AlgLB3_Stack.exe.config
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\bin\Debug\AlgLB3_Stack.exe
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\bin\Debug\AlgLB3_Stack.pdb
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.csproj.AssemblyReference.cache
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.csproj.SuggestedBindingRedirects.cache
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.csproj.CoreCompileInputs.cache
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.exe
+B:\Projects\university\алгоритмы c#\AlgLB3_Stack\AlgLB3_Stack\obj\Debug\AlgLB3_Stack.pdb

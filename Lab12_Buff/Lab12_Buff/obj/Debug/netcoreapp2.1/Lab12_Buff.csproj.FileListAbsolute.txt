@@ -1,0 +1,24 @@
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.deps.json
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.runtimeconfig.json
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.runtimeconfig.dev.json
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.dll
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.pdb
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.csprojAssemblyReference.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.csproj.CoreCompileInputs.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.AssemblyInfoInputs.cache
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.AssemblyInfo.cs
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.dll
+C:\Users\pressF\Documents\Visual Studio 2017\Projects\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.pdb
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.deps.json
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.runtimeconfig.json
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.runtimeconfig.dev.json
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.dll
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\netcoreapp2.1\Lab12_Buff.pdb
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.csproj.AssemblyReference.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.GeneratedMSBuildEditorConfig.editorconfig
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.AssemblyInfoInputs.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.AssemblyInfo.cs
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.csproj.CoreCompileInputs.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.dll
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.pdb
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\netcoreapp2.1\Lab12_Buff.genruntimeconfig.cache

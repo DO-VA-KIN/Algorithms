@@ -1,0 +1,15 @@
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\net7.0\Lab12_Buff.exe
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\net7.0\Lab12_Buff.deps.json
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\net7.0\Lab12_Buff.runtimeconfig.json
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\net7.0\Lab12_Buff.dll
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\bin\Debug\net7.0\Lab12_Buff.pdb
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.csproj.AssemblyReference.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.GeneratedMSBuildEditorConfig.editorconfig
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.AssemblyInfoInputs.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.AssemblyInfo.cs
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.csproj.CoreCompileInputs.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.dll
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\refint\Lab12_Buff.dll
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.pdb
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\Lab12_Buff.genruntimeconfig.cache
+B:\Projects\university\алгоритмы c#\Lab12_Buff\Lab12_Buff\obj\Debug\net7.0\ref\Lab12_Buff.dll
