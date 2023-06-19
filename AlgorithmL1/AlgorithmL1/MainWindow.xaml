@@ -1,0 +1,193 @@
+﻿<Window x:Class="AlgorithmL1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorithmL1"        
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=DotNetProjects.DataVisualization.Toolkit"
+        mc:Ignorable="d"
+        Title="Алгоритмы. Лабораторная.1." FontSize="14" Background="WhiteSmoke" Height="500" Width="1000" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="MMenu1" FontSize="14" Background="AliceBlue">
+            <MenuItem x:Name="MISortMethod" Header="способ сортировки" Grid.Column="0" Grid.Row="0">
+                <MenuItem Header="встроенный" Tag="0" IsChecked="True" Click="MISortMethod_Click"/>
+                <MenuItem Header="пузырьком" Tag="1" Click="MISortMethod_Click"/>
+                <MenuItem Header="перемешиванием" Tag="2" Click="MISortMethod_Click"/>
+                <MenuItem Header="вставками" Tag="3" Click="MISortMethod_Click"/>
+                <MenuItem Header="выбором" Tag="4" Click="MISortMethod_Click"/>
+                <MenuItem Header="быстрая" Tag="5" Click="MISortMethod_Click"/>
+                <MenuItem Header="слияние" Tag="5" Click="MISortMethod_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TabControl x:Name="TCControl1" Grid.Column="0" Grid.Row="1">
+            <TabItem Header="сортировка">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnGenerate" Content="Генерация" Margin="5,5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Click="BtnGenerate_Click"/>
+                    <Button x:Name="BtnSort" Content="Сортировка" Margin="5,5" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="4" Click="BtnSort_Click"/>
+                    <ProgressBar x:Name="PBProgress" Maximum="8" Margin="5,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="8"/>
+                    <GroupBox Header="1.000" Margin="5,5" Grid.Row="1" Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB1000" Tag="0" Grid.Row="0"/>
+                            <Label x:Name="L1000" Tag="0" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="2.000" Margin="5,5" Grid.Row="1" Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB2000" Tag="1" Grid.Row="0"/>
+                            <Label x:Name="L2000" Tag="1" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="4.000" Margin="5,5" Grid.Row="1" Grid.Column="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB4000" Tag="2" Grid.Row="0"/>
+                            <Label x:Name="L4000" Tag="2" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="8.000" Margin="5,5" Grid.Row="1" Grid.Column="3">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB8000" Tag="3" Grid.Row="0"/>
+                            <Label x:Name="L8000" Tag="3" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="16.000" Margin="5,5" Grid.Row="1" Grid.Column="4">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB16000" Tag="4" Grid.Row="0"/>
+                            <Label x:Name="L16000" Tag="4" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="32.000" Margin="5,5" Grid.Row="1" Grid.Column="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB32000" Tag="5" Grid.Row="0"/>
+                            <Label x:Name="L32000" Tag="5" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="64.000" Margin="5,5" Grid.Row="1" Grid.Column="6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB64000" Tag="6" Grid.Row="0"/>
+                            <Label x:Name="L64000" Tag="6" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="128.000" Margin="5,5" Grid.Row="1" Grid.Column="7">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+                            <ListBox x:Name="LB128000" Tag="7" Grid.Row="0"/>
+                            <Label x:Name="L128000" Tag="7" Grid.Row="1"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="результаты">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8.7*"/>
+                        <ColumnDefinition Width="3"/>
+                        <ColumnDefinition Width="1.3*" MaxWidth="150"/>
+                    </Grid.ColumnDefinitions>
+                    <DVC:Chart FlowDirection="LeftToRight" LegendTitle="Типы" Title="Cравнение" x:Name="DVCHistogram" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0">
+                        <DVC:LineSeries Title="Линия" DependentValuePath="Value" IndependentValuePath="Key"/>
+                        <DVC:AreaSeries Title="Область" DependentValuePath="Value" IndependentValuePath="Key"/>
+                        <DVC:ColumnSeries Title="Столбовая" DependentValuePath="Value" IndependentValuePath="Key"/>
+                        <DVC:PieSeries Title="Круг" DependentValuePath="Value" IndependentValuePath="Key"/>
+                        <DVC:LabeledPieSeries Title="LabeledPie" DependentValuePath="Value" IndependentValuePath="Key"/>
+                    </DVC:Chart>
+                    <GridSplitter Background="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="1"/>
+                    <Border Background="LightBlue" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="0" Grid.Column="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Label Content="Вывод" Grid.Row="0" Grid.Column="0"/>
+                            <ComboBox x:Name="CB1" Margin="5,5" Grid.Row="1" Grid.Column="0" SelectionChanged="CB1_SelectionChanged">
+                                <ComboBoxItem Content="Метод"/>
+                                <ComboBoxItem Content="Размер"/>
+                            </ComboBox>
+                            <ComboBox x:Name="CB2" Margin="5,5" Grid.Row="2" Grid.Column="0"/>
+                            <ComboBox x:Name="CB3" SelectedIndex="0" Margin="5,5" Grid.Row="3" Grid.Column="0">
+                                <ComboBoxItem Content="Скорость"/>
+                                <!--<ComboBoxItem Content="Память"/>-->
+                            </ComboBox>
+                            <Button x:Name="BtnRequest" Content="запрос" Margin="10,7.5" Grid.Row="4" Grid.Column="0" Click="BtnRequest_Click"/>
+                            <Label Content="Отображение" Grid.Row="6" Grid.Column="0"/>
+                            <ComboBox x:Name="CBSeries" SelectedIndex="2" Margin="5,5" Grid.Row="7" Grid.Column="0">
+                                <ComboBoxItem Content="Линия"/>
+                                <ComboBoxItem Content="Область"/>
+                                <ComboBoxItem Content="Столбовая"/>
+                                <ComboBoxItem Content="Круг"/>
+                                <ComboBoxItem Content="Им. круг"/>
+                            </ComboBox>
+                        </Grid>
+                    </Border>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Label x:Name="LUsedResources" Grid.Column="0" Grid.Row="2"/>
+    </Grid>
+</Window>
