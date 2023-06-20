@@ -22,7 +22,7 @@ namespace Lab12_Buff
         /// <summary>
         /// Значения
         /// </summary>
-        private T[] Values;
+        private readonly T[] Values;
         /// <summary>
         /// Флаг перезаписи
         /// </summary>
@@ -62,10 +62,10 @@ namespace Lab12_Buff
         {
             //в случае "пустоты" - топчимся на месте
             if (Values[Head].Equals(default(T)))
-                return default(T);
+                return default;
 
             T t = Values[Head];
-            Values[Head] = default(T);
+            Values[Head] = default;
 
             if (Head == Values.Length - 1)
                 Head = 0;

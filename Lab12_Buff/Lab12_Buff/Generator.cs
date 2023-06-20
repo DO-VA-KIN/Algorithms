@@ -23,7 +23,7 @@ namespace Lab12_Buff
         public uint Next(uint mod)
         {
             //Seed >>= 1;
-            BitArray bits = new BitArray(BitConverter.GetBytes(Seed));//1
+            BitArray bits = new(BitConverter.GetBytes(Seed));//1
             bits.LeftShift(1);//1
             bits[0] = bits[31] ^ bits[28];
             uint[] uints = new uint[1];
