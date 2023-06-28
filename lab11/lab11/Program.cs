@@ -33,7 +33,7 @@ namespace lab11
 
 
             Generator gen = new();
-            char[,] maze = gen.Generate(45, 5, true, true);
+            char[,] maze = gen.Generate(50, 3, true, true);
 
             for (int i = 0; i < maze.GetLength(0); i++)
             {

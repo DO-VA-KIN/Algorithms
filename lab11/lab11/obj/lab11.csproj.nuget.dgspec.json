@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\Projects\\lab11\\lab11\\lab11.csproj": {}
+    "B:\\Projects\\university\\алгоритмы c#\\lab11\\lab11\\lab11.csproj": {}
   },
   "projects": {
-    "B:\\Projects\\lab11\\lab11\\lab11.csproj": {
+    "B:\\Projects\\university\\алгоритмы c#\\lab11\\lab11\\lab11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\Projects\\lab11\\lab11\\lab11.csproj",
+        "projectUniqueName": "B:\\Projects\\university\\алгоритмы c#\\lab11\\lab11\\lab11.csproj",
         "projectName": "lab11",
-        "projectPath": "B:\\Projects\\lab11\\lab11\\lab11.csproj",
+        "projectPath": "B:\\Projects\\university\\алгоритмы c#\\lab11\\lab11\\lab11.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "B:\\Projects\\lab11\\lab11\\obj\\",
+        "outputPath": "B:\\Projects\\university\\алгоритмы c#\\lab11\\lab11\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "A:\\visual\\shared\\NuGetPackages"

@@ -1,0 +1,19 @@
+﻿<Window x:Class="lab12Generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=DotNetProjects.DataVisualization.Toolkit"
+        xmlns:local="clr-namespace:lab12Generator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DVC:Chart FlowDirection="LeftToRight" LegendTitle="Типы" Title="Cравнение" x:Name="DVCHistogram" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0">
+            <!--<DVC:LineSeries Title="Линия" DependentValuePath="Value" IndependentValuePath="Key"/>-->
+            <DVC:AreaSeries Title="Область" DependentValuePath="Value" IndependentValuePath="Key"/>
+            <!--<DVC:ColumnSeries Title="Столбовая" DependentValuePath="Value" IndependentValuePath="Key"/>
+            <DVC:PieSeries Title="Круг" DependentValuePath="Value" IndependentValuePath="Key"/>
+            <DVC:LabeledPieSeries Title="LabeledPie" DependentValuePath="Value" IndependentValuePath="Key"/>-->
+        </DVC:Chart>
+    </Grid>
+</Window>

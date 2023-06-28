@@ -25,7 +25,7 @@ namespace lab11
             }
 
             Random rnd = new((int)DateTime.Now.Ticks);
-            int[] stPoint = new int[2] { rnd.Next(Size), rnd.Next(Size) };
+            int[] stPoint = new int[2] { 0, rnd.Next(Size) };
             Maze[stPoint[0], stPoint[1]] = 'S';
 
             int[][] directions =
@@ -49,7 +49,7 @@ namespace lab11
                     nPoint[0] = cPoint[0] + direct[0] * 2;
                     nPoint[1] = cPoint[1] + direct[1] * 2;
 
-                    if (0 <= nPoint[0] && nPoint[0] < Size && 0 <= nPoint[1] && nPoint[1] < Size && Maze[nPoint[0], nPoint[1]] == '|')
+                    if (0 < nPoint[0] && nPoint[0] < Size-1 && 0 < nPoint[1] && nPoint[1] < Size - 1 && Maze[nPoint[0], nPoint[1]] == '|')
                         neighbors.Add(nPoint);
                 }
 
@@ -65,14 +65,35 @@ namespace lab11
 
             int[][] lPoints =
             {
-                new [] { 0, rnd.Next(1, Size - 2) },
-                new [] { Size - 1, rnd.Next(1, Size - 2) },
-                new [] { rnd.Next(1, Size - 2), 0 },
-                new [] { rnd.Next(1, Size - 2), Size - 2 },
+                new [] { 0, rnd.Next(1, Size - 1) },
+                new [] { Size - 1, rnd.Next(1, Size - 1) },
+                new [] { rnd.Next(1, Size - 1), 0 },
+                new [] { rnd.Next(1, Size - 1), Size - 1},
             };
             int[] lPoint = lPoints[rnd.Next(4)];
 
             Maze[lPoint[0], lPoint[1]] = 'F';
+            if (lPoint[0] == 0)
+            {
+                Maze[lPoint[0] + 1, lPoint[1]] = ' ';
+                Maze[lPoint[0] + 2, lPoint[1]] = ' ';
+            }
+            else if (lPoint[0] == Maze.GetLength(0) - 1)
+            {
+                Maze[lPoint[0] - 1, lPoint[1]] = ' ';
+                Maze[lPoint[0] - 2, lPoint[1]] = ' ';
+            }
+            else if (lPoint[1] == 0)
+            {
+                Maze[lPoint[0], lPoint[1] + 1] = ' ';
+                Maze[lPoint[0], lPoint[1] + 2] = ' ';
+            }
+            else if (lPoint[1] == Maze.GetLength(1) - 1)
+            {
+                Maze[lPoint[0], lPoint[1] - 1] = ' ';
+                Maze[lPoint[0], lPoint[1] - 2] = ' ';
+            }
+
             Raze(ref Maze, MaxWidth, Galery, Squares);
             FindWay(ref Maze);
             return Maze;
@@ -80,6 +101,7 @@ namespace lab11
 
         private static void Raze(ref char[,] Maze, int MaxWidth, bool Galery, bool Squares)
         {
+            //MaxWidth -= 2;
             Random rnd = new((int)DateTime.Now.Ticks);
 
             if (Squares)
@@ -112,31 +134,6 @@ namespace lab11
                         }
                     }
 
-                    //foreach (int[] wall in walls)
-                        //Maze[wall[0], wall[1]] = '|';
-
-                    //short countEntryes = 4;
-                    //while (countEntryes > 0)
-                    //{
-                    //    int count = 0;
-                    //    int[] wall = walls[rnd.Next(walls.Count)];
-                    //    wall[0] -= 0;
-                    //    wall[1] -= 0;
-                    //    if (Maze[wall[0] - 1, wall[1]] == ' ' && Maze[wall[0] + 1, wall[1]] == ' ')
-                    //        count++;
-                    //    if (Maze[wall[0] + 1, wall[1]] == ' ')
-                    //        count++;
-                    //    if (Maze[wall[0], wall[1] - 1] == ' ' && Maze[wall[0], wall[1] + 1] == ' ')
-                    //        count++;              
-                    //    if (Maze[wall[0], wall[1] + 1] == ' ')
-                    //        count++;
-                    //    if (count > 1)
-                    //    {
-                    //        Maze[wall[0], wall[1]] = ' ';
-                    //        countEntryes--;
-                    //    }
-                    //}
-
                     foreach (int[] space in spaces)
                         Maze[space[0], space[1]] = ' ';
                 }
@@ -158,17 +155,6 @@ namespace lab11
                     }
                 }
             }
-
-            //for (int i = 0; i < Maze.GetLength(0); i++)
-            //{
-            //    Maze[0, i] = '|';
-            //    Maze[Maze.GetLength(0) - 1, i] = '|';
-            //}
-            //for (int i = 1; i < Maze.GetLength(1); i++)
-            //{
-            //    Maze[i, 0] = '|';
-            //    Maze[i, Maze.GetLength(1) - 1] = '|';
-            //}
         }
 
 
@@ -217,7 +203,7 @@ namespace lab11
                     int next_col = current_col + direction.Item2;
 
                     // Проверяем, можно ли перейти в следующую клетку и она не была посещена ранее
-                    if (0 <= next_row && next_row < Size && 0 <= next_col && next_col < Size && maze[next_row, next_col] != '#' && !visited[next_row, next_col])
+                    if (0 <= next_row && next_row < Size && 0 <= next_col && next_col < Size && maze[next_row, next_col] != '|' && !visited[next_row, next_col])
                     {
                         visited[next_row, next_col] = true; // Помечаем клетку как посещенную
                         List<(int, int)> new_path = new(path)
